@@ -18,10 +18,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Dominik Koch",
-    template: "%s | Dominik Koch",
+    default: "Umar Irale",
+    template: "%s | Umar Irale",
   },
-  description: "Software Engineer based in Germany. Open source enthusiast.",
+  description: "Software Engineer based in Lagos. Focusing On Design.",
 };
 
 export const viewport: Viewport = {
