@@ -5,9 +5,9 @@ import { LinkedInIcon } from "@/components/icons/linkedin-icon";
 import { TwitterIcon } from "@/components/icons/twitter-icon";
 import { ModeToggle } from "@/components/mode-toggle";
 import { SectionTabs } from "@/components/sections/section-tabs";
-import { Sponsors } from "@/components/sections/sponsors";
 
-const age = 20.940_063_403_62;
+
+
 
 export default function ContentLayout({
   children,
@@ -37,11 +37,7 @@ export default function ContentLayout({
               </div>
             </div>
             <p className="text-md">
-              Software Engineer based in Lagos,{" "}
-              <span className="precise-age" id="age">
-                {age}
-              </span>{" "}
-              years old with a passion for Design. Self proclaimed 10x
+              Software Engineer based in Lagos,{" "} with a passion for Design. Self proclaimed 10x
               engineer currently working @dfold .
             </p>
             <div className="flex flex-row gap-4">
@@ -90,9 +86,6 @@ export default function ContentLayout({
             {children}
           </section>
 
-          <section className="mt-12">
-            <Sponsors />
-          </section>
         </main>
         <footer className="relative z-50 mt-8">
           <div className="mx-auto flex max-w-xl flex-col items-center gap-2 px-4 py-4 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-0 sm:text-left">

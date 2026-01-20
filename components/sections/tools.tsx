@@ -23,11 +23,11 @@ const toolGroups: ToolGroupProps[] = [
     title: "Backend & Infrastructure",
     tools: [
       { name: "Node.js", icon: "/tools/nodejs.svg" },
-      { name: "Bun", icon: "/tools/bun.svg" },
+      { name: "NPM", icon: "/tools/npm.svg" },
       { name: "PostgreSQL", icon: "/tools/postgresql.svg" },
-      { name: "Hono", icon: "/tools/hono.svg" },
-      { name: "Neon", icon: "/tools/neon.svg" },
-      { name: "Drizzle", icon: "/tools/drizzle-orm.svg" },
+      { name: "PHP", icon: "/tools/php.svg" },
+      { name: "Laravel", icon: "/tools/laravel.svg" },
+      { name: "Python", icon: "tools/python.svg" },
     ],
   },
   {
@@ -35,8 +35,6 @@ const toolGroups: ToolGroupProps[] = [
     tools: [
       { name: "Docker", icon: "/tools/docker.svg" },
       { name: "Vitest", icon: "/tools/vitest.svg" },
-      { name: "PostHog", icon: "/tools/posthog.svg" },
-      { name: "Upstash", icon: "/tools/upstash.svg" },
     ],
   },
 ];
