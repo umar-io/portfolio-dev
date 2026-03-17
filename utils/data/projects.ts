@@ -50,7 +50,7 @@ export const projects: ProjectItem[] = [
  
   */
   {
-    name: "Marble",
+    name: "Leezign",
     description:
       "A full-stack Next.js application designed to automate the generation and management of residential and commercial lease agreements.",
     technologies: [
@@ -61,7 +61,7 @@ export const projects: ProjectItem[] = [
       { name: "Groq AI" },
     ],
     liveUrl: "https://leezign.vercel.app/",
-    image: "/images/marble.webp",
+    image: "/images/leezign.png",
     status: {
       type: "in_progress",
       label: "Active Maintainer",

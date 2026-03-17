@@ -170,11 +170,15 @@ export function Projects() {
   const archivedProjects = projects.filter(
     (project) => project.status.type === "archived"
   );
+  const indevelopmentProjects = projects.filter(
+    (projects) => projects.status.type === "in_progress"
+  )
 
   const allActiveAndCompleted = [
     ...activeProjects,
     ...completedProjects,
     ...inactiveProjects,
+    ...indevelopmentProjects
   ];
 
   return (
