@@ -20,6 +20,11 @@ export const statusConfig = {
     label: "Inactive",
     className: "bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-300",
   },
+
+  in_progress: {
+    label: "In Development",
+    className: "bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-300",
+  },
 } as const;
 
 export type StatusType = keyof typeof statusConfig;
@@ -44,23 +49,23 @@ export const projects: ProjectItem[] = [
   /* 
  
   */
-  // {
-  //   name: "Marble",
-  //   description:
-  //     "A modern, open-source headless CMS designed for blogs and content management, built with TypeScript and Nextjs.",
-  //   technologies: [
-  //     { name: "Next.js" },
-  //     { name: "Postgres" },
-  //     { name: "TypeScript" },
-  //     { name: "Prisma" },
-  //     { name: "Upstash" },
-  //   ],
-  //   liveUrl: "https://marblecms.com/",
-  //   image: "/images/marble.webp",
-  //   status: {
-  //     type: "inactive",
-  //     label: "Past Maintainer",
-  //   },
-  //   category: "saas",
-  // },
+  {
+    name: "Marble",
+    description:
+      "A full-stack Next.js application designed to automate the generation and management of residential and commercial lease agreements.",
+    technologies: [
+      { name: "Next.js" },
+      { name: "Postgres" },
+      { name: "TypeScript" },
+      { name: "Drizzle" },
+      { name: "Groq AI" },
+    ],
+    liveUrl: "https://leezign.vercel.app/",
+    image: "/images/marble.webp",
+    status: {
+      type: "in_progress",
+      label: "Active Maintainer",
+    },
+    category: "saas",
+  },
 ];
