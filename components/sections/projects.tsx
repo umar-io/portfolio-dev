@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   type ProjectItem,
@@ -35,16 +36,26 @@ function TechnologiesList({
 function ProjectLinks({
   githubUrl,
   liveUrl,
+  slug,
 }: {
   githubUrl?: string;
   liveUrl?: string;
+  slug?: string;
 }) {
-  if (!(githubUrl || liveUrl)) {
+  if (!(githubUrl || liveUrl || slug)) {
     return null;
   }
 
   return (
     <div className="mt-2 flex gap-2">
+      {slug && (
+        <Link
+          className="flex items-center gap-1 text-foreground text-sm hover:underline"
+          href={`/projects/${slug}`}
+        >
+          Read more
+        </Link>
+      )}
       {githubUrl && (
         <a
           className="flex items-center gap-1 text-primary text-sm hover:underline"
@@ -148,6 +159,7 @@ function ProjectSection({
               <ProjectLinks
                 githubUrl={project.githubUrl}
                 liveUrl={project.liveUrl}
+                slug={project.slug}
               />
             </div>
           </div>
