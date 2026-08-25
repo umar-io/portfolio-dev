@@ -88,6 +88,7 @@ export const projects: ProjectItem[] = [
       { name: "Docker" },
     ],
     liveUrl: "https://app.salesjinja.com",
+    image:"https://salesjinja.com/logo.png",
     status: {
       type: "active",
     },
