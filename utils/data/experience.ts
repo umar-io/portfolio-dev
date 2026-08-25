@@ -32,6 +32,26 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
+    company: "SalesJinja",
+    companyUrl: "salejinja.com",
+    location: "Lagos, NG",
+    currentPosition: {
+      role: "Software Engineer",
+      type: "Fulltime",
+      startDate: new Date("2026-07-01"),
+      endDate: "present",
+      location: "Remote, NG",
+    },
+    skills: [
+      { name: "Python" },
+      { name: "React" },
+      { name: "Git" },
+      { name: "GCP" },
+    ],
+    logo: "",
+    category: "work",
+  },
+  {
     company: "Dfold",
     companyUrl: "",
     location: "Lagos, NG",
@@ -39,7 +59,7 @@ export const experiences: ExperienceItem[] = [
       role: "PHP Developer",
       type: "Contract",
       startDate: new Date("2025-11-03"),
-      endDate: "present",
+      endDate: new Date("2026-01-31"),
       location: "Remote, NG",
     },
     skills: [
