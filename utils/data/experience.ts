@@ -48,7 +48,7 @@ export const experiences: ExperienceItem[] = [
       { name: "Git" },
       { name: "GCP" },
     ],
-    logo: "",
+    logo: "https://salesjinja.com/logo.png",
     category: "work",
   },
   {
