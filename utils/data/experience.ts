@@ -37,7 +37,7 @@ export const experiences: ExperienceItem[] = [
     location: "Lagos, NG",
     currentPosition: {
       role: "Software Engineer",
-      type: "Fulltime",
+      type: "Full-time",
       startDate: new Date("2026-07-01"),
       endDate: "present",
       location: "Remote, NG",
